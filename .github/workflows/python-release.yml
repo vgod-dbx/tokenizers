@@ -34,7 +34,6 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: wheels
-          working-directory: ./bindings/python
-          path: ./dist
+          path: ./bindings/python/dist
 
 
