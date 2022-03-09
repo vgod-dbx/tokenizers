@@ -30,9 +30,10 @@ jobs:
         run: sh build-wheels.sh
 
       - name: Upload wheels
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v1
         with:
           name: wheels
-          path: ./bindings/python/dist
+          working-directory: ./bindings/python
+          path: ./dist
 
 
